@@ -1,17 +1,10 @@
 
 <!DOCTYPE html>
 <meta charset="utf-8">
-<title>Web Speech API Demo</title>
-<div id="status">
-</div>
-<p></p>
-<form class="speechOutput" action="http://google.com/search" method="get">
-  <input  name="q" id="input_field" size="30">
-</form>
-<button onclick="reco.toggleStartStop()" style="border: 0; background-color:transparent">
-  <img id="status_img" src="webspeechcodelab/mic.gif" alt="Start"></button>
-
-<script src="webspeech.js"></script>
+<!-- <p></p> -->
+<div id="status"></div><form class="speechOutput" action="http://google.com/search" method="get">
+  <input  name="q" id="input_field" size="15">
+</form><button class="mic" onclick="reco.toggleStartStop()" style="border: 0; background-color:transparent"><img id="status_img" src="http://webspeech.nytimes.com/webspeech/mic.gif" alt="Start"></button>
 
 <script>
 var reco = new WebSpeechRecognition();
@@ -21,7 +14,16 @@ reco.finalResults('input_field');
 
 reco.onEnd = function() {
 	if (reco.final_transcript.indexOf("homepage") != -1) {
+		alert('test');
 			window.location.href = 'http://www.nytimes.com/';
+	}
+
+	if (reco.final_transcript.indexOf("Chelsea") != -1) {
+		window.location.href = 'http://www.nytimes.com/restaurants/search?&neighborhood=Chelsea&sortresults=nyt-rating&only_critics_picks=1';
+	}
+
+	if (reco.final_transcript.indexOf("Rome") != -1) {
+		window.location.href = 'http://www.nytimes.com/video/travel/1248069152280/36-hours-in-rome.html';
 	}
 
 	if (reco.final_transcript.indexOf("theater") != -1) {

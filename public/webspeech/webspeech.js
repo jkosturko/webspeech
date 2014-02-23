@@ -229,11 +229,11 @@ var status_array_en = {
 
 // Button images for various status conditions.
 var image_array_mic = {
-  'ready' : 'mic.gif',
-  'complete' : 'mic.gif',
-  'active' : 'mic-animate.gif',
-  'no-speech' : 'mic.gif',
-  'disable' : 'mic-slash.gif'
+  'ready' : 'http://webspeech.nytimes.com/webspeech/mic.gif',
+  'complete' : 'http://webspeech.nytimes.com/webspeech/mic.gif',
+  'active' : 'http://webspeech.nytimes.com/webspeech/mic-animate.gif',
+  'no-speech' : 'http://webspeech.nytimes.com/webspeech/mic.gif',
+  'disable' : 'http://webspeech.nytimes.com/webspeech/mic-slash.gif'
 };
 
 

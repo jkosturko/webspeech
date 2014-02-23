@@ -5,39 +5,58 @@
    License: none (public domain)
 */
 
-.speechOutput {
-  position: relative;
-  display: inline-block;
+.webspeech {
+  position: absolute;
+  z-index: 1999999998;
+  top: 0;
+  left: 281px;
+  width: 300px;
 }
 
+.webspeech .mic {
+  padding: 0;
+  margin: 0;
+}
 
-#status_img {
+.webspeech .speechOutput {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+
+.webspeech #status {
+  font-family: nyt-franklin;
+  font-size: 11px;
+  line-height: 13px;
+}
+.webspeech #status_img {
   width: 18px;
   height: 18px;
 }
 
-body {
+.webspeech body {
   line-height: 1;
 }
 /*ol, ul {
   list-style: none;
 }*/
-blockquote, q {
+.webspeech blockquote, q {
   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+.webspeech blockquote:before, .webspeech blockquote:after,
+.webspeech q:before, .webspeech q:after {
   content: '';
   content: none;
 }
-table {
+#webspeech table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 /* @end */
 
-#supercontainer {
+#webspeech #supercontainer {
 margin-left: auto;
 margin-right: auto;
 margin-top:10px;
@@ -45,7 +64,7 @@ width: 930px;
 background:url("../images/octo-half-transp.gif") no-repeat right 165px
 }
 
-body {
+#webspeech body {
 background: #FFFFFF; /* Old browsers */
 
 
@@ -55,11 +74,11 @@ background: #FFFFFF; /* Old browsers */
   font: 15px/22px 'Open Sans', Droid Sans, Arial, sans-serif;
 }
 
-strong {
+#webspeech strong {
   font-weight: bold;
 }
 
-em {
+#webspeech em {
   font-style: italic;
 }
 
@@ -68,7 +87,7 @@ em {
   width: 600px;
 }
 
-header.primary {
+#webspeech header.primary {
   text-align: center;
   width: 850px;
   height: 100px;
@@ -78,12 +97,12 @@ header.primary {
   background-color:#EFF;
 }
 
-header.primary h1
+#webspeechheader.primary h1
 {
     line-height:50px;
 }
 
-header.primary h3
+#webspeech  header.primary h3
 {
     line-height:0px;
   font-family: 'Open Sans', sans-serif;
@@ -91,7 +110,7 @@ header.primary h3
 
 /* @group Nav */
 
-nav.primary {
+#webspeech nav.primary {
   text-align: center;
   align:center;
   padding: 12px 0 18px;
@@ -99,35 +118,35 @@ nav.primary {
   background-color: #EFF;
 }
 
-nav.primary ul {
+#webspeech nav.primary ul {
   text-align: center;
   margin: 0 0 20px 28px;  
   padding: 0;
 }
-nav.primary ul, nav.primary li {
+#webspeech  nav.primary ul, nav.primary li {
   list-style: none;
 }
 
-nav.primary li {
+#webspeech  nav.primary li {
   float: left;
   margin-right: 20px;
   font: 20px/24px 'Open Sans', Arial, sans-serif;
   letter-spacing: -1px;
 }
 
-nav.primary li a {
+#webspeech  nav.primary li a {
   text-decoration: underline;
   color: #446344;
   display: block;
   padding: 3px 8px 3px 0;
 }
 
-nav.primary li.active a {
+#webspeech nav.primary li.active a {
   text-decoration: none;
 	color: #333;
 }
 
-nav.primary li a:hover {
+#webspeech nav.primary li a:hover {
   text-decoration: underline;
 }
 
@@ -136,7 +155,7 @@ nav.primary li a:hover {
 
 /* @group #main */
 
-#main {
+.webspeech #main {
   padding: 20px 24px;
   min-height: 100%;
   background-color: #EFF;
@@ -144,24 +163,24 @@ nav.primary li a:hover {
 }
 
 
-#supercontainer h2 {
+.webspeech #supercontainer h2 {
   display:block;
   background:#AADDDD;
 }
-#main a {
+.webspeech #main a {
   color: #0065bd;
   text-decoration: underline;
 }
-#main a:visited {
+.webspeech #main a:visited {
   color: #4f70bf;
 }
-#main a.button {
+.webspeech #main a.button {
   text-decoration: none;
 }
-#main p {
+.webspeech #main p {
   margin-bottom: 18px;
 }
-#main hr {
+.webspeech #main hr {
   margin: 24px auto;
   height: 8px;
   width: 410px;
@@ -169,51 +188,51 @@ nav.primary li a:hover {
   border-style: none;
   background: url(../images/hr.png) no-repeat 0 50%;
 }
-#main h1, #main h2 {
+.webspeech #main h1, .webspeech #main h2 {
   font-family: 'Aclonica', sans-serif;
   color: #000;
   
 }
-#main h1 {
+.webspeech #main h1 {
   font-size: 48px;
   line-height: 54px;
   margin-bottom: 30px;
 }
-#main h2 {
+.webspeech #main h2 {
   font-size: 36px;
   line-height: 42px;
   margin-bottom: 18px;
 }
-#main h3 {
+.webspeech #main h3 {
   font-family: 'Open Sans', serif;
   font-size: 24px;
   line-height: 30px;
   margin-bottom: 18px;
 }
 
-#main ul {
+.webspeech #main ul {
   list-style: disc;
   margin-bottom: 18px;
 }
-#main li {
+.webspeech #main li {
   list-style: disc;
   margin-left: 16px;
   padding-left: 0px;
   margin-bottom: 6px;
 }
-#main li ul {
+.webspeech #main li ul {
   margin-bottom: 0;
 }
 
-#main dl, #main dd, #main dd p {
+.webspeech #main dl, #main dd, #main dd p {
   margin-bottom: 18px;
 }
-#main dt {
+.webspeech #main dt {
 	font-weight: bold;
 	margin-bottom: 6px;
 }
 
-code {
+.webspeech code {
     background: #DDDDDD;
     position: relative;
     width: 94%;
@@ -230,7 +249,7 @@ code {
 
 
 
-footer.primary {
+.webspeech footer.primary {
   padding: 12px 0;
   margin: 12px 0;
   text-align: center;
