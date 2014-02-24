@@ -13,6 +13,19 @@
   width: 300px;
 }
 
+/*#branding .webspeech {
+  left: 631px;
+}
+
+.header-container .webspeech {
+  left: 731px;
+}
+
+.header-container .webspeech input {
+  background: grey;
+  border: black;
+  }*/
+  
 .webspeech .mic {
   padding: 0;
   margin: 0;

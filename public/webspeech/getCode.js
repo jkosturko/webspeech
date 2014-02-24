@@ -17,18 +17,19 @@ NYTD.jQuery.ajax({
       NYTD.jQuery.ajax({
           url: "http://www.nytimes.com/webspeech/sayWhatNYT.html",
           success: function(data) {
-              
+
               if (NYTD.jQuery('#webspeech').length == 0)
                  $el.prepend('<div id="webspeech" class="webspeech"> </div>');
-              
+
               NYTD.jQuery('#webspeech').html(data);
           }
-        
         })
           .done(function( data ) {
+            if ( console && console.log ) {
+              console.log( "Sample of data:", data.slice( 0, 100 ) );
+            }
           });
-      
-  }
+    }
 
 })
 

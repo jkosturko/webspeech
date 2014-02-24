@@ -229,11 +229,9 @@ var status_array_en = {
 
 // Button images for various status conditions.
 var image_array_mic = {
-  'ready' : 'http://webspeech.nytimes.com/webspeech/mic.gif',
-  'complete' : 'http://webspeech.nytimes.com/webspeech/mic.gif',
-  'active' : 'http://webspeech.nytimes.com/webspeech/mic-animate.gif',
-  'no-speech' : 'http://webspeech.nytimes.com/webspeech/mic.gif',
-  'disable' : 'http://webspeech.nytimes.com/webspeech/mic-slash.gif'
+  'ready' : 'https://googledrive.com/host/0B1jg9xNg9UTqQXZRQ1p3UGRBOGM/webspeechcodelab/mic.gif',
+  'complete' : 'https://googledrive.com/host/0B1jg9xNg9UTqQXZRQ1p3UGRBOGM/webspeechcodelab/mic.gif',
+  'active' : 'https://googledrive.com/host/0B1jg9xNg9UTqQXZRQ1p3UGRBOGM/webspeechcodelab/mic-animate.gif',
+  'no-speech' : 'https://googledrive.com/host/0B1jg9xNg9UTqQXZRQ1p3UGRBOGM/webspeechcodelab/mic.gif',
+  'disable' : 'https://googledrive.com/host/0B1jg9xNg9UTqQXZRQ1p3UGRBOGM/webspeechcodelab/mic-slash.gif'
 };
-
-
